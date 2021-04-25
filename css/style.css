@@ -1,0 +1,391 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+
+/* header */
+.head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color: #719192;
+    color: #fff;
+    position: relative;
+    position: fixed;
+    z-index: 100;
+}
+
+.head .head-left {
+    line-height: 60px;
+    font-size: 30px;
+    margin-left: 20%;
+    cursor: pointer;
+}
+
+.head .head-right {
+    line-height: 60px;
+    font-size: 20px;
+    margin-right: 30px;
+}
+.head .head-right i {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+/* Section */
+
+
+/* icons */
+
+/* .pro {
+    display: flex;
+} */
+.icons {
+    height: calc( 100vh - 60px );
+    width: 20%;
+    background-color: #719192;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    z-index: 100;
+}
+
+.icons .name {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    margin:  0 auto;
+    transform: translateY(30px);
+}
+.icons .name img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.icons .name p {
+    color: #fff;
+    margin:  0 auto;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+
+.icons .icon {
+    margin: 130px 0;
+}
+
+.icons .icon ul {
+    list-style: none;
+    margin: 0;
+}
+.icons .icon ul li {
+    padding: 15px 0;
+}
+.icons .icon ul li div a {
+    text-decoration: none;
+    color: #c7c7c7;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color .5s ease;
+}
+.icons .icon ul li div a:hover {
+    color: #fff;
+}
+.icons .icon ul li div a.active {
+    color: #fff;
+}
+.icons .icon ul li div a i {
+    width: 15px;
+}
+.icons .icon ul li div a span {
+    margin-left: 20px;
+}
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+/* Home */
+.home {
+    width: calc( 100% - 20% );
+    height: calc( 100vh + 60px );
+    margin-left: 20%;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    
+}
+.home .sec-head {
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translate(-50%,-20%);
+}
+.sec-head {
+   position: absolute;
+   top: 15%;
+   left: 50%;
+   transform: translate(-50%,-15%);
+   width: 280px;
+   background-color: #fff;
+   text-align: center;
+   border-radius: 30px;
+}
+.sec-h3 {
+    color: #719192;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.btns {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+}
+.btns .btn {
+    background-color: #719192;
+    width: 190px;
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+.btns .btn a {
+    text-decoration: none;
+    color: #fff;
+}
+.btns .btn:focus {
+    outline: none;
+}
+.btns .btn:active {
+    transform: scale(0.9);
+}
+
+/* Grade */
+.grade {
+    width: calc( 100% - 20% );
+    height: calc( 100vh );
+    margin-left: 20%;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.grade .btns .btn {
+    margin-top: 50px;
+}
+
+/* Library */
+.library {
+    width: calc( 100% - 20% );
+    height: calc( 100vh - 60px );
+    margin-left: 20%;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.library{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 10px;
+}
+
+.library span {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: drop 1s ease-in-out infinite;
+    animation-delay: calc(0.1s*var(--i))
+}
+
+@keyframes drop{
+    0%{
+        transform: translateY(0px)
+    }
+    20%
+    {
+        transform: translateY(-20px);
+    }
+    40%,100%{
+        transform: translateY(0px);
+    }
+}
+
+
+/* Classes Kind */
+
+.btns-kind {
+    width: 60%;
+}
+.classes-kind .btns-kind {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.btns-kind .btn {
+    background-color: #719192;
+    width: 190px;
+    margin: 50px 15px 0;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+.btns-kind .btn:focus {
+    outline: none;
+}
+.btns-kind .btn:active {
+    transform: scale(0.9);
+}
+
+.classes-kind .btns i {
+    position: absolute;
+    left: 20px;
+    font-size: 25px;
+}
+
+/* chapter-kind */
+.chapter-kind .files {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: #719192;
+    border-radius: 22px;
+    color: #fff;
+    font-size: 20px;
+}
+.chapter-kind .files div {
+    padding: 20px;
+}
+.chapter-kind .files div:not(:last-of-type) {
+    border-bottom: 1px solid #7da1a2;
+}
+.chapter-kind .files div i {
+    margin: 0 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.chapter-kind .files div .files-item {
+    position: absolute;
+    right: 0;
+}
+
+
+/* Responsive */
+@media(max-width:768px) {
+    .head .head-right {
+        margin-right: 10px;
+    }
+    .icons .name {
+        width: 60px;
+        height: 60px;
+    }
+    .icons .icon ul {
+        padding: 0px ;
+    }
+    .icons .icon ul li {
+        margin-top: 30px;
+    }
+    .icons .icon ul li div a {
+        text-align: center;
+    }
+    .icons .icon ul li div a i {
+        width: 100%;
+        font-size: 2rem;
+    }
+    .icons .icon ul li div a span {
+        display: none;
+    }
+    .sec-head {
+        width: 220px;
+     }
+     .library span {
+        font-size: 5em;
+    }
+    .btns-kind {
+        width: 100%;
+    }
+    .btns-kind .btn {
+        width: 150px;
+    }
+    .chapter-kind .files div i {
+        margin: 0 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .chapter-kind .files {
+        width: 90%;
+    }
+}
+
+@media(max-width:576px) {
+    .btns-kind .btn {
+        width: 130px;
+    }
+    .btns-kind .btn {
+        margin: 40px 10px 0;
+        padding: 10px;
+    }
+    .btns-kind.btns-chapter .btn {
+        margin: 40px 10px 0;
+        padding: 10px;
+    }
+}
+
+@media (max-width:400px) {
+    .chapter-kind .files {
+        width: 95%;
+    }
+    .btns-kind .btn {
+        width: 110px;
+        font-size: 16px;
+    }
+    
+}
