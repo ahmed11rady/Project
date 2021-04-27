@@ -47,6 +47,27 @@ const ClassesChapterH3 = document.querySelector('.classes-Chapter .sec-head .sec
 const ChapterKind =  document.querySelector('.chapter-kind')
 const ChapterKindH3 = document.querySelector('.chapter-kind .sec-head .sec-h3')
 
+const btnlang = document.querySelector('.language')
+for(let i = 0; i < 1; i++) {
+    const Button = document.createElement('button')
+    const A = document.createElement('a')
+    const Text = document.createTextNode('lang 1')
+    A.appendChild(Text)
+    Button.appendChild(A)
+    Button.className = 'btn'
+    btnlang.appendChild(Button)
+}
+
+const btncha = document.querySelector('.btns-chapter')
+for(let i = 0; i < 1; i++) {
+    const Button = document.createElement('button')
+    const A = document.createElement('a')
+    const Text = document.createTextNode('Chapter 1')
+    A.appendChild(Text)
+    Button.appendChild(A)
+    Button.className = 'btn'
+    btncha.appendChild(Button)
+}
 
 const Classes = document.querySelector('.classes .btns').children
 
