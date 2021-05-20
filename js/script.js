@@ -46,6 +46,7 @@ const ClassesChapter = document.querySelector('.classes-Chapter')
 const ClassesChapterH3 = document.querySelector('.classes-Chapter .sec-head .sec-h3')
 const ChapterKind =  document.querySelector('.chapter-kind')
 const ChapterKindH3 = document.querySelector('.chapter-kind .sec-head .sec-h3')
+const ChapterVideo = document.querySelector('.chapter-video')
 
 const btnlang = document.querySelector('.language')
 for(let i = 0; i < 1; i++) {
@@ -84,7 +85,6 @@ const BtnsKinds = document.querySelector('.classes-kind .language').children
 
 for(let i = 0; i<BtnsKinds.length; i++) {
     BtnsKinds[i].addEventListener('click', ()=> {
-        console.log(BtnsKinds[i].innerHTML)
         ClassesKind.style.display = 'none'
         ClassesChapter.style.display = 'block'
         ClassesChapterH3.innerHTML = BtnsKinds[i].innerHTML
@@ -100,3 +100,11 @@ for(let i = 0; i<ChapterBtns.length; i++) {
         ChapterKindH3.innerHTML = ChapterBtns[i].innerHTML
     })
 }
+
+
+const VideoPage = document.querySelector('.video-eye')
+
+VideoPage.addEventListener('click', ()=> {
+    ChapterKind.style.display = 'none'
+    ChapterVideo.style.display = 'block'
+})
